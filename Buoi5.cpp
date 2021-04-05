@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 int main()
 {
     int numbers[5];
@@ -15,11 +14,12 @@ int main()
 	}
 
     /* chạy vòng lặp so sánh  */
-    for (j = 0; j < a; j++)
+    for (j = 0; j < a-1; j++)
     {
         for (i = 0; i < a; i++)
         {
             if (numbers[i] > numbers[i+1]) {
+
                 numbers[i] = temp ;
                 numbers[i] = numbers[i+1];
                 numbers[i+1] = temp;
@@ -31,7 +31,7 @@ int main()
 
     for ( u = 0; u < a; u++)
     {
-        printf("%d",numbers[u]);
+        printf("%d\n",numbers[u]);
     }
     
     

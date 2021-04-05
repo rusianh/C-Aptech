@@ -1,1 +1,1 @@
-stdio.h
+using namespace std;
